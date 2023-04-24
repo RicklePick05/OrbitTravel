@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Formulieren post</title>
+		<link rel="stylesheet" href="formulierstyle.css" type="text/css">
+	</head>
+	
+	<body>
+		
+		<form action="toon_waarden_post.php" method="post" >
+
+        	<p>Voornaam : <input type="text" name="voornaam" /></p>
+        	<!-- je vindt na submit de voornaam terug in $_POST['voornaam'] -->
+        	
+			<p>Achternaam : <input type="text" name="achternaam" /></p>
+			<P>Geslacht
+			<select name="geslacht">
+				<option>Man</option>
+				<option>Vrouw</option>
+				<option>Intersex</option>
+				<option>Trans</option>
+				<option>Non-binair</option>
+				<option>Persoonlijk</option>
+				<option>Gender-neutraal</option>
+				<option>Helikopter</option> 
+			</select></p>
+			<p>Bestemming(en) : <input type="checkbox" name="bestemming" value="België" /> Belgie <input type="checkbox" name="bestemming" value="Nederland" /> Nederland <input type="checkbox" name="bestemming" value="Luxemburg" /> Luxemburg <input type="checkbox" name="bestemming" value="Marokko" /> Marokko <input type="checkbox" name="bestemming" value="Zweden" /> Zweden <input type="checkbox" name="bestemming" value="Guatemala" /> Guatemala </p>
+			<p>Gemeente : <input type="text" name="gemeente" /></p>
+			<p>Postcode : <input type="text" name="postcode" /></p>
+			<p>Straat en Nr. : <input type="text" name="StraatEnNr" /></p>
+			<p>Rijksregisternummer : <input type="text" name="rijksregisternummer" /></p>
+			
+			<p>Annulatieverzekering :<input type="radio" name="annulatieverzekering" value="Ja" /> Ja <input type="radio" name="annulatieverzekering" value="Nee" /> Nee</p>
+			<p>Extra bagage :<input type="radio" name="extra bagage" value="Ja" /> Ja <input type="radio" name="extra bagage" value="Nee" /> Nee</p>
+			<p>GSM-nummer : <input type="text" name="nummer" /></p>
+			<p>e-mail : <input type="text" name="e-mail" /></p>
+			<p>Opmerkingen : </p>
+			<p> <textarea name="commentaar" rows="5" cols="40" ></textarea> </p>
+			<p>Einde : <input type="submit" name="verzend" value="Verzend formulier" /></p>
+        
+        </form>
+		
+				
+		
+	
+	</body>	
+	
+</html>
